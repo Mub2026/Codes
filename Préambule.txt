@@ -1,0 +1,16 @@
+Bonjour, au plaisir de partager avec vous mes travaux de recherche sur la flexibilité thermique de bâtiments multi-logements.
+
+L’essentiel à savoir concernant le contenu des travaux dans ce repositoire. Ils  sont organisés en principalement en Deux (2) parties, à savoir :  les dossiers de rédaction (Manuscrits, présentation et Template sur Overleaf) et les dossiers des codes de programmation Python (Identification_EKF et Simulateur MPC_MUB)
+
+     A-	Les manuscrits sont à la disposition pour révision et sont constitués d'un fichier Word version Française et fichiers main.tex de l'article dans les dossiers Overleaf en  version Français et en Anglais à réviser.
+
+     B-	Les Codes de simulation Python : 
+
+Pour la programmation python, j’ai utilisé la version 3.14.6 sur l’IDE VS-Code. Mes lignes de codes sont écrites en cellules Jupiter Notebook. Pour l’exécution des différents codes, elle s’effectue de manière séquentielle, de la première cellule à la dernière cellule.
+
+Chaque code principal utilise des fichiers de données CSV en séries temporelles.
+     1.	Le code sur l’identification par filtre de Kalman Etendu (EKF) utilise 32 fichiers csv de données de série Temporelles exportées du modèle de bâtiment multi-résidentiel (MUB) de 16 appartements conçus sur BEopt, version 2.8. Chaque appartement dispose de 2 fichiers : "Chauffage" et "Roue libre".
+
+     2.	 Le code du Simulateur MPC MUB utilise également 4 fichiers de données pour sa simulation : 1-bornes_recharge_ve.csv; 2-charge_non_flexibles.csv; 3-paramètres_thermiques,           	4-temperature_exterieure; 
+
+     3. Le code du simulateur de charge de base (charge non flexibles et véhicule Électrique).  Ce dernier permet la simulation de la charge de base agrégée et désagrégée sans chauffage afin d’alimenter le Simulateur MPC MUB.
